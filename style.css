@@ -1,1 +1,114 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+:root {
+  --brightorange: hsl(31, 77%, 52%);
+  --darkcyan: hsl(184, 100%, 22%);
+  --verydarkcyan: hsl(179, 100%, 13%);
+  --paragraphwhite: hsla(0, 0%, 100%, 0.75);
+  --lightgrey: hsl(0, 0%, 95%);
+}
+
+* h2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 3rem;
+  color: var(--lightgrey);
+  text-transform: uppercase;
+}
+
+* p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75em;
+  max-width: 14rem;
+  color: var(--paragraphwhite);
+}
+
+* a {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+  background: var(--lightgrey);
+  font-size: 15px;
+  padding: 0;
+  max-width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  top: 50;
+  max-width: 75%;
+}
+
+.card section {
+  padding: 3em;
+}
+
+.card img {
+  width: 5rem;
+  padding: 0;
+}
+
+.card .sedan {
+  background-color: var(--brightorange);
+}
+
+.card .suv {
+  background-color: var(--darkcyan);
+}
+
+.card .luxury {
+  background-color: var(--verydarkcyan);
+}
+
+.card .button {
+  padding: 2em 0;
+  margin-top: 5em;
+}
+
+.card .button.sedan a {
+  color: var(--brightorange);
+}
+
+.card .button.suv a {
+  color: var(--darkcyan);
+}
+
+.card .button.luxury a {
+  color: var(--verydarkcyan);
+}
+
+.card .button a {
+  background: var(--lightgrey);
+  padding: 1em 2.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid var(--lightgrey);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.card .button a:hover {
+  background-color: transparent;
+  border: 2px solid var(--lightgrey);
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

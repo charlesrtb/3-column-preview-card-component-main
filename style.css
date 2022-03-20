@@ -19,6 +19,7 @@
   line-height: 1.75em;
   max-width: 14rem;
   color: var(--paragraphwhite);
+  margin-bottom: 5em;
 }
 
 * a {
@@ -46,6 +47,12 @@ body {
           flex-direction: column;
 }
 
+@media (max-width: 73.5rem) {
+  body {
+    height: unset;
+  }
+}
+
 .card {
   display: -ms-grid;
   display: grid;
@@ -56,8 +63,27 @@ body {
   max-width: 75%;
 }
 
+@media (max-width: 73.5rem) {
+  .card {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    top: unset;
+    margin: auto;
+  }
+}
+
 .card section {
   padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card img {
@@ -78,8 +104,9 @@ body {
 }
 
 .card .button {
-  padding: 2em 0;
-  margin-top: 5em;
+  padding: 0;
+  margin: 1em 0 2em 0;
+  width: 100%;
 }
 
 .card .button.sedan a {

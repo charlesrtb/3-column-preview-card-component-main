@@ -19,7 +19,8 @@
         font-size: 1rem;
         line-height: 1.75em;
         max-width: 14rem;
-        color: var(--paragraphwhite)
+        color: var(--paragraphwhite);
+        margin-bottom: 5em;
     }
 
     a {
@@ -33,6 +34,7 @@ body {
     padding: 0;
     max-width: 100%;
     height: 90vh;
+    @media (max-width: 73.5rem){height:unset;}
 
     display: flex;
     justify-content: center;
@@ -47,8 +49,18 @@ body {
     top:50;
     max-width: 75%;
 
+    @media (max-width: 73.5rem) {
+        grid-template-columns: 1fr;
+        top:unset;
+        margin:auto;
+    }
+
     section {
         padding: 3em;
+
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
     }
 
     img {
@@ -68,8 +80,9 @@ body {
     }
 
     .button {
-        padding: 2em 0;
-        margin-top: 5em;
+        padding: 0;
+        margin: 1em 0 2em 0;
+        width: 100%;
 
         &.sedan a {
             color: var(--brightorange);

@@ -87,6 +87,12 @@ body {
           flex-direction: column;
 }
 
+@media (max-width: 73.5rem) {
+  .card section {
+    border-radius: 0;
+  }
+}
+
 .card img {
   width: 5rem;
   padding: 0;
@@ -98,6 +104,12 @@ body {
   border-bottom-left-radius: 1em;
 }
 
+@media (max-width: 73.5rem) {
+  .card .sedan {
+    border-radius: 0;
+  }
+}
+
 .card .suv {
   background-color: var(--darkcyan);
 }
@@ -106,6 +118,12 @@ body {
   background-color: var(--verydarkcyan);
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
+}
+
+@media (max-width: 73.5rem) {
+  .card .luxury {
+    border-radius: 0;
+  }
 }
 
 .card .button {
